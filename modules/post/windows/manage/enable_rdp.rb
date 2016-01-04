@@ -32,7 +32,7 @@ class Metasploit3 < Msf::Post
         OptString.new('PASSWORD', [ false, 'Password for the user created.' ]),
         OptBool.new(  'ENABLE',   [ false, 'Enable the RDP Service and Firewall Exception.', true]),
         OptBool.new(  'FORDWARD', [ false, 'Forward remote port 3389 to local Port.', false]),
-        OptInt.new(   'LPORT',    [ false,  'Local port to fordward remote connection.', 3389])
+        OptInt.new(   'LPORT',    [ false, 'Local port to fordward remote connection.', 3389])
       ], self.class)
   end
 
